@@ -1,0 +1,22 @@
+server:
+  port: 8078
+spring:
+  application:
+    name: api-gateway-sentinel
+  cloud:
+    gateway:
+      #路由规则
+      routes:
+        - id: order_route  #路由的唯一标识，路由到订单，名字可以自定义
+          uri: lb://order-seata-alibaba-service #集成nacos后地址就可以改为服务名,lb:load balance 使用nacos的本地负载均衡
+          predicates:
+            - Path=/order/**
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        username: nacos
+        password: nacos
+    sentinel:
+      transport:
+        dashboard: 127.0.0.1:8858
+

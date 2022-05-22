@@ -1,0 +1,38 @@
+server:
+  port: 8061
+spring:
+  application:
+    name: order-service-sentinel
+  cloud:
+    sentinel:
+      transport:
+        dashboard: 127.0.0.1:8858
+      web-context-unify: false #默认是true，即将调用链路收起来，不维护
+      datasource:
+        flow-rule: #这个名字可以自定义的
+          nacos:
+            serverAddr: 127.0.0.1:8848
+            #如果配置了权限管理，必须加用户名和密码
+            username: nacos
+            password: nacos
+            dataId: order-service-sentinel-flow-rule
+            ruleType: flow
+    # 配置nacos服务地址与命名空间，可根据环境配置命名空间
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: public
+        username: nacos
+        password: nacos
+      discovery:
+        username: nacos
+        password: nacos
+        server-addr: 127.0.0.1:8848
+
+#  # 配置nacos groupId，可以自定义groupId
+#  # 跟上面一样按照不同规则设置不同groupId
+#  sentinel.nacos.flow.group-id=SENTINEL_FLOW_GROUP
+#  sentinel.nacos.degrade.group-id=SENTINEL_DEGRADE_GROUP
+#  sentinel.nacos.auth.group-id=SENTINEL_AUTH_GROUP
+#  sentinel.nacos.param.group-id=SENTINEL_PARAM_GROUP
+#  sentinel.nacos.system.group-id=SENTINEL_SYSTEM_GROUP

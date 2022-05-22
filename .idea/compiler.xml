@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="order-service-openfeign" />
+        <module name="product-service" />
+        <module name="stock-seata" />
+        <module name="order-service-sentinel" />
+        <module name="user-service" />
+        <module name="gateway-sentinel" />
+        <module name="stock-seata-alibaba" />
+        <module name="nacos-config" />
+        <module name="sentinel-demo" />
+        <module name="order-seata" />
+        <module name="order-service" />
+        <module name="order-seata-alibaba" />
+        <module name="order-service-openfeign-sentinel" />
+        <module name="gateway" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="order-service-gateway-sentinel" target="8" />
+      <module name="stock-seata (1)" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="order-service" options="" />
+      <module name="product-service" options="" />
+      <module name="springcloud-alibaba" options="-parameters" />
+      <module name="user-service" options="" />
+    </option>
+  </component>
+</project>

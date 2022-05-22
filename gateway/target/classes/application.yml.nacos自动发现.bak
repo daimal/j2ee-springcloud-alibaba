@@ -1,0 +1,19 @@
+server:
+  port: 8077
+#集成nacos版本
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true #是否启动自动识别nacos服务，相当于他会自动用服务名当断言规则，而且会自动去掉第一层地址，一般不用因为不能自定义断言，代码阅读性也不好
+
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        username: nacos
+        password: nacos
+
+

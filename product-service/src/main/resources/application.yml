@@ -1,0 +1,18 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: product-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        #这个是nacos页面的登录名，如果不设置，默认都是nacos
+        username: nacos
+        password: nacos
+        #命名空间，可以隔离不同的生产环境，比如dev开发环境，prod生产环境,默认就是public
+        namespace: public
+#ribbon要执行的负载均衡
+product-service: # 调用的提供者的名称
+  ribbon:
+    NFLoadBalancerRuleClassName: com.share.shareconter.configure.Nacosweight

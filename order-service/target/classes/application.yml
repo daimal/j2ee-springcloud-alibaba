@@ -1,0 +1,42 @@
+server:
+  port: 8080
+
+spring:
+  #应用名称，（nacos会将该名称当作服务名称）
+  application:
+    name: order-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        #这个是nacos页面的登录名，如果不设置，默认都是nacos
+        username: nacos
+        password: nacos
+        #命名空间，可以隔离不同的生产环境，比如dev开发环境，prod生产环境,默认就是public
+        namespace: public
+        #fasle代表永久实例，哪怕宕机了也不会删除实例
+        ephemeral: true
+        #group: 默认是DEFAULT_GROUP 同一个命名空间中具有相同特征的服务进行归类
+        #service: 默认是${spring.application.name}
+        #weight: 权重 数值越大，权重越大
+        #metadata: 假设元数据中有 version=1，那么可以结合元数据做扩展功能
+#    #不使用ribbon
+#    loadbalancer:
+#      ribbon:
+#        enabled: false
+    sentinel:
+      transport:
+        dashboard: localhost:8070 # 指定控制台服务的地址
+        # 默认是 8719，通过该端口使得平台于微服务的到通信
+        port: 9999
+product-service:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.alibaba.cloud.nacos.ribbon.NacosRule
+#    自定义的配置均衡算法
+#   NFLoadBalancerRuleClassName: org.kehl.ribbon.CustomRule
+ribbon:
+  eager-load:
+    #配置服务提供者，使用ribbon的饥饿加载，多个的话使用逗号分隔
+    clients: product-service
+    #开启饥饿加载
+    enabled: true

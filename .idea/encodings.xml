@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/gateway-sentinel/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway-sentinel/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nacos-config/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nacos-config/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-seata/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-seata/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-service-gateway-sentinel/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-service-gateway-sentinel/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-service-openfeign-sentinel/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-service-openfeign-sentinel/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-service-openfeign/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-service-openfeign/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-service-sentinel/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-service-sentinel/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata/order-seata-alibaba/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata/order-seata-alibaba/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata/order-seata/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata/order-seata/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata/stock-seata-alibaba/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata/stock-seata-alibaba/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata/stock-seata/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata/stock-seata/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-demo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-service/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,34 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        #如果配置了权限管理，就一定要带上用户名和密码
+        username: nacos
+        password: nacos
+        #namespace:dev 这样写好像会读不到
+        namespace: 2e214ad1-2298-4f12-adbb-95a0fcd44407
+        group: DEFAULT_GROUP #同样也是只针对默认的配置文件
+        #nacos默认读取的配置文件格式是：properties ,只针对默认配置文件和profile
+        #一旦修改为其他格式，就需要在这里指定
+        file-extension: yaml
+        shared-configs[0]:
+          # 配置支持共享的 Data Id
+          data-id: org.kehl.order.common.properties
+          # 配置 Data Id 所在分组，缺省默认 DEFAULT_GROUP
+          group: DEFAULT_GROUP
+          # 配置Data Id 在配置变更时，是否动态刷新，缺省默认 false
+          refresh: true
+        shared-configs[1]:
+          # 配置支持共享的 Data Id
+          data-id: org.kehl.order.common2.properties
+          # 配置 Data Id 所在分组，缺省默认 DEFAULT_GROUP
+          group: DEFAULT_GROUP
+          # 配置Data Id 在配置变更时，是否动态刷新，缺省默认 false
+          refresh: true
+        extension-configs:
+          - data-id: org.kehl.order.common3.properties
+            group: DEFAULT_GROUP
+            refresh: true
+
+
